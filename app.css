@@ -9,18 +9,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .clock {
   position: relative;
   width: 40rem;
   height: 40rem;
-  border: 5px solid black;
+  border: 15px solid rgb(226, 58, 75);
   border-radius: 50%;
   background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg")
-    center;
+    center rgb(255, 255, 255);
   background-repeat: no-repeat;
-  background-size: 88%;
+  background-size: 90%;
 }
 
 .secs {
@@ -31,7 +32,7 @@ body {
   width: 0.1rem;
   background-color: tomato;
   transform: translateX(-50%);
-  transform-origin: 25% 0;
+  transform-origin: 50% 0;
 }
 
 .mins {
@@ -43,7 +44,7 @@ body {
   border-radius: 20px;
   background-color: black;
   transform: translateX(-50%);
-  transform-origin: 25% 0;
+  transform-origin: 50% 0;
 }
 
 .hours {
@@ -55,10 +56,10 @@ body {
   background-color: black;
   border-radius: 15px;
   transform: translateX(-50%);
-  transform-origin: 50% 0;
+  transform-origin: 20% 0;
 }
 
-.dot {
+.center {
   position: absolute;
   top: 50%;
   left: 50%;
